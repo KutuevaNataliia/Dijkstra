@@ -61,8 +61,8 @@ void relax(int* D, int* Heap, int* InHeap, int &HeapCnt,int* Parent, int u, int 
     if (InHeap[v] == WHITE) {
         HeapCnt++;
         setItem(Heap, InHeap, v, HeapCnt);
-        goUp(D, Heap, InHeap, InHeap[v]);
     }
+    goUp(D, Heap, InHeap, InHeap[v]);
 }
 
 int getMinimal(int* D, int* Heap, int* InHeap, int &HeapCnt){
